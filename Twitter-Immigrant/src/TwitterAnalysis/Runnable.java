@@ -1,6 +1,6 @@
 package TwitterAnalysis;
 
-import org.ahocorasick.trie.*;
+
 import javax.swing.JFileChooser;
 import java.io.File;    
 public class Runnable {

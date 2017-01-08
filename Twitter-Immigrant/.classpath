@@ -2,31 +2,19 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/lib/twitter4j-core-4.0.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/lib/twitter4j-async-4.0.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/lib/twitter4j-examples-4.0.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/lib/twitter4j-media-support-4.0.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/lib/twitter4j-stream-4.0.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/commons-logging-1.2/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/commons-logging-1.2/commons-logging-1.2-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/commons-codec-1.10/commons-codec-1.10.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/commons-codec-1.10/commons-codec-1.10-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/commons-codec-1.10/commons-codec-1.10-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/commons-codec-1.10/commons-codec-1.10-tests.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/commons-codec-1.10/commons-codec-1.10-test-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/httpcomponents-client-4.5.2/lib/commons-codec-1.9.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/httpcomponents-client-4.5.2/lib/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/httpcomponents-client-4.5.2/lib/fluent-hc-4.5.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/httpcomponents-client-4.5.2/lib/httpclient-4.5.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/httpcomponents-client-4.5.2/lib/httpclient-cache-4.5.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/httpcomponents-client-4.5.2/lib/httpclient-win-4.5.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/httpcomponents-client-4.5.2/lib/httpcore-4.4.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/httpcomponents-client-4.5.2/lib/httpmime-4.5.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/httpcomponents-client-4.5.2/lib/jna-4.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/httpcomponents-client-4.5.2/lib/jna-platform-4.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/commons-httpclient-3.1/commons-httpclient-3.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/htmlcleaner-2.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/minhp/Downloads/org-apache-commons-logging.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/aho-corasick"/>
+	<classpathentry kind="lib" path="C:/Users/Minh/Downloads/twitter4j-examples-4.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Minh/Downloads/twitter4j-media-support-4.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Minh/Downloads/twitter4j-stream-4.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Minh/Downloads/twitter4j-async-4.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Minh/Downloads/twitter4j-core-4.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Minh/Downloads/org-apache-commons-logging.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Minh/Downloads/htmlcleaner-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Minh/Downloads/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Minh/Downloads/commons-codec-1.9-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Minh/Downloads/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Minh/Downloads/commons-codec-1.9-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Minh/Downloads/commons-codec-1.9-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Minh/Downloads/commons-codec-1.9-test-sources.jar"/>
+	<classpathentry kind="lib" path="/aho-corasick/src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
