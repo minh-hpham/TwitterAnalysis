@@ -20,7 +20,7 @@ import twitter4j.conf.Configuration;
 import twitter4j.conf.ConfigurationBuilder;
 
 // SET RUNNABLE
-public class TwitterAnalysis {//implements  Runnable{
+public class TwitterAnalysis implements  Runnable{
 	
 	  Twitter twitter ;
     private final static String CONSUMER_KEY = "";
