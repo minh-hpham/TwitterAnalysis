@@ -30,9 +30,8 @@ public class Runnable2 {
 	private static AhoCorasickDoubleArrayTrie<String> negativeTrie = new AhoCorasickDoubleArrayTrie<String>();
 	private static AhoCorasickDoubleArrayTrie<String> neutralTrie = new AhoCorasickDoubleArrayTrie<String>();
 
-	// private static String formatStr = "%-30s %-150s %-15s %-15s %-10s %-10s
-	// %-50s %-50s%n";
-	private static String formatStr = "%-30s %-50s %-15s %-15s %-10s %-10s %-30s %-30s%n";
+	 private static String formatStr = "%-30s %-150s %-15s %-15s %-10s %-10s %-50s %-50s\r\n";
+	//private static String formatStr = "%-30s %-50s %-15s %-15s %-10s %-10s %-30s %-30s%n";
 	// patterns used to extract messages
 	private static Pattern pId = Pattern.compile(Pattern.quote("<>userid->") + "(.*?)" + Pattern.quote("<>message->"));
 	private static Pattern pMessage = Pattern.compile(Pattern.quote("<>message->") + "(.*?)" + Pattern.quote("http") + "(.*?)" + Pattern.quote("<>geotag->"));
@@ -63,8 +62,7 @@ public class Runnable2 {
 				File fileToSave = savedFile.getSelectedFile();
 				// write to file
 				try (BufferedWriter bw = new BufferedWriter(new FileWriter(fileToSave))) {
-					bw.write(String.format(formatStr, "TweetID", "message", "latitude", "longitude", "Negative",
-							"Neutral", "List of Neg. Words", "List of Neu. Words"));
+					bw.write(String.format(formatStr, "TweetID", "message", "latitude", "longitude", "Negative","Neutral", "List of Neg. Words", "List of Neu. Words"));
 					while (line != null) {
 						findMatchedWords(line, bw);
 						line = br.readLine();
