@@ -8,6 +8,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import com.hankcs.algorithm.AhoCorasickDoubleArrayTrie;
 
 import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -30,7 +32,7 @@ public class Runnable2 {
 	private static AhoCorasickDoubleArrayTrie<String> negativeTrie = new AhoCorasickDoubleArrayTrie<String>();
 	private static AhoCorasickDoubleArrayTrie<String> neutralTrie = new AhoCorasickDoubleArrayTrie<String>();
 
-	 private static String formatStr = "%-30s %-150s %-15s %-15s %-10s %-10s %-50s %-50s\r\n";
+	 private static String formatStr = "%-50s %-125s %-15s %-15s %-10s %-10s %-35s %-35s\r\n";
 	//private static String formatStr = "%-30s %-50s %-15s %-15s %-10s %-10s %-30s %-30s%n";
 	// patterns used to extract messages
 	private static Pattern pId = Pattern.compile(Pattern.quote("<>userid->") + "(.*?)" + Pattern.quote("<>message->"));
@@ -62,19 +64,27 @@ public class Runnable2 {
 				File fileToSave = savedFile.getSelectedFile();
 				// write to file
 				try (BufferedWriter bw = new BufferedWriter(new FileWriter(fileToSave))) {
-					bw.write(String.format(formatStr, "TweetID", "message", "latitude", "longitude", "Negative","Neutral", "List of Neg. Words", "List of Neu. Words"));
+					bw.write(String.format(formatStr, "TWEETID", "MESSAGE", "LATITUDE", "LONGITUDE", "NEGATIVE","NEUTRAL", "LIST OF NEG. WORDS", "LIST OF NEU. WORDS"));
 					while (line != null) {
 						findMatchedWords(line, bw);
 						line = br.readLine();
 					}
+					bw.close();
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
-
+				
+			}
+			else{
+				savedFile.cancelSelection();
 			}
 			br.close();
-		}
 
+		}else{
+			openedFile.cancelSelection();
+		}
+		JOptionPane.showMessageDialog(new JFrame(),"YOUR FILE HAS BEEN PROCESSED");
+		System.exit(0);
 	}
 
 	/*
